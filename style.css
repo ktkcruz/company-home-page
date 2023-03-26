@@ -382,7 +382,10 @@ footer p {
         margin-bottom: 10px;
     } 
 
-
+    #about p {
+        margin-top: -300px;
+        font-size: 1rem;
+    }
 
 }
    

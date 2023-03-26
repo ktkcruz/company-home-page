@@ -1,0 +1,400 @@
+/* Global styles */
+
+@font-face {
+    font-family: 'Antonio';
+    src: url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600&display=swap");
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+h2 {
+    color:hsl(0, 0%, 12%);
+    font-family: Antonio, monospace;
+    font-size: 3rem;
+}
+
+h3 {
+    color: hsl(48, 95%, 50%);
+    font-family: Rajdhani, monospace;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 75px;
+
+}
+
+h4 {
+    font-family: Rajdhani, monospace;
+    font-size: 1.5rem;
+}
+
+p {
+    color: hsl(0, 0%, 12%);
+    font-family: Rajdhani, monospace;
+    font-size: 1.5rem;
+}
+
+main .container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+
+
+/* Header Section
+=================*/
+
+header {
+    background-color: hsl(0, 0%, 12%);
+    border-bottom: 1px solid hsl(48, 95%, 50%);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: -125px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}    
+
+.logo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    align-self: center;
+    border: 3px solid hsl(0, 0%, 100%);
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.logo h1 {
+    color: hsl(48, 95%, 50%);
+    font-family: Antonio, monospace;
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-weight: 600;
+}
+
+nav ul {
+    color:hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    font-family: Oswald, monospace;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: 1px underline;
+    padding: 10px 25px 15px 25px;
+}
+
+
+
+
+/* Intro/Splash
+===============*/
+
+.container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: -25px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.intro {
+    background-color: hsl(0, 0%, 5%);
+    border-radius: 5px;
+    min-width: 400px;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin-left: 0 auto;
+    padding: 30px;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.intro h2 {
+    color: hsl(196, 100%, 50%);
+}
+
+.intro p {
+    color: hsl(0, 0%, 100%);
+    padding: 10px 5px;
+    opacity: 1;
+}
+
+
+
+/* Services
+===============*/
+
+#services .container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#services h3 {
+    background-color: hsl(0, 0%, 12%);
+    margin-top: -10px;
+    margin-bottom: -100px;
+}
+
+.service img {
+    width: 150px;
+    height: 150px;
+}
+
+.service {
+    max-width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+
+
+/* About Us Section 
+===================*/
+
+#about {
+    background-color: hsl(196, 96%, 37%);
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -75px;
+    padding: 0 100px;
+}
+
+#about h3 {
+    margin-bottom: -300px;
+}
+
+#about p {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+/* Footer Section 
+===========================*/
+
+footer {
+    background-color: hsl(0, 0%, 12%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+footer p {
+    color: hsl(48, 95%, 50%);
+}
+
+
+
+/* TABLET LANDSCAPE
+==================*/
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px){
+    .logo img {
+        width: 65px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    nav li {
+        font-size: 1.25rem;
+        padding-top: 5px;
+    }
+
+    .intro {
+        margin: 0 auto;
+    }
+
+    .intro span {
+        display: block;
+    }
+
+    footer {
+        margin-top: 225px;
+    }
+
+
+}
+
+/* TABLET PORTRAIT
+==================*/
+
+@media only screen and (max-width: 999px){
+    .logo img {
+        width: 65px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    nav li {
+        font-size: 1.25rem;
+        padding-top: 5px;
+    }
+    
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    #about {
+        margin-top: -50px;
+    }
+
+    footer {
+        margin-top: 225px;
+    }
+}
+
+/* LRG MOBILE SIZING 
+====================*/
+
+@media only screen and (max-width: 700px) {
+    #about {
+        margin: -50px -25px;
+        padding-top: 25px;
+    }
+
+    #about p {
+        font-size: 1.25rem;
+        margin-top: 50px;
+        padding: 0;
+    }
+  
+    footer {
+        margin-top: 1100px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+
+/* MOBILE SIZING 
+================*/
+
+@media only screen and (max-width: 500px){
+
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 3.25rem;
+    }
+
+    nav li {
+        font-size: 1rem;
+    }
+    
+    .video-container {
+        margin-top: 105px;
+        height: 350px;
+    }
+    
+    .intro {
+        background: none;
+        opacity: 1;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .service {
+        min-width: 300px;
+        margin-top: 0px; 
+    }
+
+    .service img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #about {
+        height: 350px;
+        margin-top: -25px;
+        padding: 5px 25px;
+    }
+
+    #about h3 {
+        margin-bottom: 10px;
+    } 
+
+
+
+}
+   
+
+
+/* COLOR NOTES
+===============
+
+main yellow: hsl(48, 49%, 50%)
+lighter yellow: hsl(48, 100%, 56%)
+
+main blue: hsl(196, 100%, 50%)
+darker blue: hsl(237, 100%, 34%)
+
+black: hsl(0, 0%, 12%)
